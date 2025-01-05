@@ -1,0 +1,315 @@
+body {
+  background-color: gray;
+}
+
+header {
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 20px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+header .logo {
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #13ff00;
+}
+
+header nav {
+  margin-left: 50px;
+}
+
+header nav a {
+  position: relative;
+  font-size: 19px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-left: 20px;
+  padding: 8px;
+  color: #fff;
+  letter-spacing: .8px;
+  transition: .3s ease-in-out;
+  border-bottom: solid transparent 3px;
+}
+
+header nav a:hover {
+  color: #13ff00;
+  border-bottom: solid #13ff00 3px;
+}
+
+.icon a {
+  display: inline-flex;
+  font-size: 22px;
+  color: #fff;
+  margin-right: 15px;
+  transition: .3s;
+}
+
+.icon a:hover {
+  color: #13ff00;
+}
+
+section {
+  padding: 4% 6% 0;
+}
+
+.Home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Home .content {
+  text-align: center;
+  max-width: 700px;
+}
+
+.Home .content h4 {
+  margin-top: 10px;
+  font-size: 24px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  font-style: italic;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.Home .content h1 {
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.content h1 span {
+  font-size: 62px;
+  font-weight: 700;
+  color: #13ff00;
+}
+
+.profile-picture {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+
+.content p {
+  font-size: 17px;
+  color: #eee;
+  line-height: 1.8;
+  margin: 20px 0 35px;
+}
+
+.Home .button a {
+  display: inline-block;
+  padding: 10px 30px;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 22px;
+  border: solid 2px #eee;
+  border-radius: 10px;
+  margin-right: 20px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.Home .button .btn2 {
+  background-color: #13ff00;
+  border: #13ff00 solid 2px;
+  color: #202020;
+}
+
+.Home .social {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.Home .social a {
+  color: #fff;
+  font-size: 20px;
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  border: solid #fff 2px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: .3s ease;
+  box-shadow: 0 0 10px #fff;
+}
+
+.Home .social a:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1200px) {
+  .Home .content h1 {
+    font-size: 40px;
+  }
+
+  .Home .content h1 span {
+    font-size: 52px;
+  }
+}
+
+@media (max-width: 992px) {
+  header {
+    padding: 15px 5%;
+  }
+
+  .Home .content h1 {
+    font-size: 35px;
+  }
+
+  .Home .content h1 span {
+    font-size: 47px;
+  }
+
+  .Home .button a {
+    font-size: 20px;
+    padding: 8px 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  header nav a {
+    font-size: 17px;
+    margin-left: 15px;
+  }
+
+  .Home .content h1 {
+    font-size: 30px;
+  }
+
+  .Home .content h1 span {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header .logo {
+    font-size: 25px;
+  }
+
+  header nav {
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header .icon a {
+    margin-right: 5px;
+  }
+
+  .Home {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .Home .content h1 {
+    font-size: 20px;
+  }
+
+  .Home .content h1 span {
+    font-size: 30px;
+  }
+
+  .Home .content p {
+    font-size: 14px;
+  }
+
+  .Home .button a {
+    font-size: 18px;
+    padding: 7px 20px;
+    margin: 10px 0;
+  }
+
+  .Home .social a {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 360px) {
+  header .logo {
+    font-size: 20px;
+  }
+
+  header nav a {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  .Home .content h1 {
+    font-size: 18px;
+  }
+
+  .Home .content h1 span {
+    font-size: 25px;
+  }
+
+  .Home .content p {
+    font-size: 12px;
+  }
+
+  .Home .button a {
+    font-size: 16px;
+    padding: 5px 15px;
+    margin: 5px 0;
+  }
+
+  .Home .social a {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 280px) {
+  header .logo {
+    font-size: 15px;
+  }
+
+  header nav a {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+
+  .Home .content h1 {
+    font-size: 15px;
+  }
+
+  .Home .content h1 span {
+    font-size: 20px;
+  }
+
+  .Home .content p {
+    font-size: 10px;
+  }
+
+  .Home .button a {
+    font-size: 14px;
+    padding: 4px 8px;
+    margin: 3px 0;
+  }
+}
+ /* [_{{{CITATION{{{_1{](https://github.com/supremeking23/order/tree/e34c7337e2142b8efa378479c9090c33e0e879db/Swiss%20Deli%20New%2Fparallax%2Findex.php) */
